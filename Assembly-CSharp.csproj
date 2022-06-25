@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{48cbdb99-99f3-0803-eca6-d507eb1f677c}</ProjectGuid>
+    <ProjectGuid>{84a3a345-399b-f3b2-0e26-aa87d2c9ee7a}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,6 +64,7 @@
      <Compile Include="Assets\FancyScrollView\Examples\Sources\02_FocusOn\Cell.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\ScrollView.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\Window.cs" />
+     <Compile Include="Assets\TakaharaNext\shakyo.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\Common\ScenesDropdown.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\01_Basic\ScrollView.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\09_LoadTexture\Example09.cs" />
@@ -77,6 +78,7 @@
      <Compile Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\ItemData.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\ScrollView.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Context.cs" />
+     <Compile Include="Assets\TakaharaNext\Shakyo2.cs" />
      <Compile Include="Assets\TakaharaNext\ExampleTakahara.cs" />
      <Compile Include="Assets\Scripts\ChatSystem.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\ItemData.cs" />
@@ -98,13 +100,11 @@
      <Compile Include="Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\ScrollView.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\03_InfiniteScroll\Cell.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\06_LoopTabBar\SlideScreenTransition.cs" />
+     <Compile Include="Assets\button.cs" />
+     <Compile Include="Assets\TakaharaNext\Shakyo1.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\02_FocusOn\Context.cs" />
      <Compile Include="Assets\FancyScrollView\Examples\Sources\02_FocusOn\ItemData.cs" />
      <Compile Include="Assets\Takahara\Scripts\MyScrollViewCell.cs" />
-     <Compile Include="Assets\TakaharaNext\shakyo.cs" />
-     <Compile Include="Assets\TakaharaNext\Shakyo1.cs" />
-     <Compile Include="Assets\TakaharaNext\Shakyo2.cs" />
-     <Compile Include="Assets\button.cs" />
      <None Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Metaball.shader" />
      <None Include="Assets\FancyScrollView\Examples\Sources\04_Metaball\Metaball.hlsl" />
      <None Include="Assets\FancyScrollView\Examples\Sources\05_Voronoi\Voronoi.hlsl" />
@@ -324,7 +324,7 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/intern_for_study_and_try/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/final_scroll_view/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -678,43 +678,43 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/intern_for_study_and_try/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/final_scroll_view/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/intern_for_study_and_try/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/final_scroll_view/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/intern_for_study_and_try/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/final_scroll_view/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/intern_for_study_and_try/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/final_scroll_view/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/intern_for_study_and_try/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/final_scroll_view/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/intern_for_study_and_try/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/final_scroll_view/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/intern_for_study_and_try/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/final_scroll_view/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/intern_for_study_and_try/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/final_scroll_view/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/intern_for_study_and_try/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/final_scroll_view/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/intern_for_study_and_try/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/denjo/Documents/intern/unity_practice/final_scroll_view/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="FancyScrollView.Editor.csproj">
-      <Project>{057b4365-11ba-95a8-8e9b-bbe44c445541}</Project>
+      <Project>{e16adc8b-0a68-6538-2ca5-e4bdcfe69862}</Project>
       <Name>FancyScrollView.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="FancyScrollView.csproj">
-      <Project>{73279cc9-5c03-1781-5293-3bdaf378f053}</Project>
+      <Project>{30bc122a-0c44-f78f-6320-ac8ea0b036d8}</Project>
       <Name>FancyScrollView</Name>
     </ProjectReference>
   </ItemGroup>
